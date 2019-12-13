@@ -9,10 +9,10 @@ If you haven't already, you need to create a Salmon index of your transcriptome.
 Make sure your transcriptome is in .fasta format. 
 Go to the same directory as your transcriptome, and on the command line type the following:
 
-'''salmon index -t yourtranscriptomefile -i nameofyourindexedtranscriptome'''
+	salmon index -t yourtranscriptomefile -i nameofyourindexedtranscriptome
 
 Place all fastq files into a single folder. In the command line, go to this directory, and run the following for each sample:
 
-'''salmon quant -i nameofyourindexedtranscriptome -l A -1 read1 -2 read2 -p 4 -o nameofyouroutputfile'''
+	salmon quant -i nameofyourindexedtranscriptome -l A -1 read1 -2 read2 -p 4 -o nameofyouroutputfile
 
 
